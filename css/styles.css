@@ -845,8 +845,8 @@ ul {
     transition: var(--animation);
 }
 
-.modal-svg:hover,
-.modal-svg:focus {
+.modal-button:hover .modal-svg,
+.modal-button:focus .modal-svg {
     fill: var(--brand-color)
 }
 
@@ -905,12 +905,15 @@ ul {
 .modal-form-input:hover,
 .modal-form-input:focus {
     border-color: var(--brand-color);
+    cursor: pointer;
 }
 
 .modal-form-input:focus-within + .modal-form-svg,
 .modal-form-input:hover + .modal-form-svg,
 .modal-form-input:focus + .modal-form-svg {
     fill: var(--brand-color);
+    cursor: pointer;
+    
 }
 
 .modal-form-svg {
@@ -927,7 +930,7 @@ ul {
     display: block;
     height: 120px;
     width: 100%;
-    padding: 12px 24px;
+    padding: 12px 16px;
     border: 1px solid var(--modal-border);
     border-radius: 4px;
     resize: none;
@@ -939,6 +942,7 @@ ul {
 .modal-form-messege:hover,
 .modal-form-messege:focus {
     border-color: var(--brand-color);
+    cursor: pointer;
 }
 
 .modal-form-check {
